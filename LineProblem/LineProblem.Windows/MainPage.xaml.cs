@@ -38,8 +38,8 @@ namespace LineProblem
                guessLine.Y1=plane.ActualHeight/2;
                guessLine.X2=plane.ActualWidth;
                guessLine.Y2=plane.ActualHeight/2;
-               guessLineCentre.X = guessLine.ActualWidth / 2;
-               guessLineCentre.Y = guessLine.ActualHeight / 2;
+               guessLineCentre.X = (guessLine.X1+guessLine.X2)/2;
+               guessLineCentre.Y = (guessLine.Y1+guessLine.Y2)/2;
         }
 
         private void plane_Tapped(object sender, TappedRoutedEventArgs e)
